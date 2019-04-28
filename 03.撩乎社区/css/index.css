@@ -1,0 +1,47 @@
+/******************** 公共样式-begin ************************/
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* 统一设置 */
+body{
+    font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, PingFang SC, Microsoft YaHei, Source Han Sans SC, Noto Sans CJK SC, WenQuanYi Micro Hei, sans-serif;
+    background-color: #f6f6f6;font-size: 15px;color: #1a1a1a;
+}
+a{
+    text-decoration: none;
+    color: #1a1a1a;
+}
+ul{
+    list-style: none;
+}
+/* 版心 */
+.container{
+    width: 1000px;
+    margin: 0 auto;
+    background-color: red;
+}
+/******************** 公共样式-end ************************/
+
+/******************** 头部样式-begin ************************/
+#hd{
+    width: 100%;
+    height: 52px;
+    background-color: #fff;
+    position: fixed;left: 0;top: 0;
+    z-index: 999; box-shadow: 0 1px 1px #e7e7e7;
+}
+.hd-main-left .hd-logo {display: block;margin-right: 20px;}
+.hd-main-left .icon-logo {width: 100px;}
+.hd-main-left {flex: 1; /*background-color: red;*/display: flex;flex-direction: row; /*侧轴居中*/align-items: center;}
+.hd-main-left .hd-main-nav a { /*background-color: skyblue;*/padding: 0 10px;color: #8590a6;}
+.hd-main-left .hd-main-nav a.current {color: #444;}
+.hd-main-left .hd-main-nav a:hover {color: #175199;}
+
+/******************** 头部样式-end ************************/
+
+
+/******************** 主要样式-begin ************************/
+/******************** 主要样式-end ************************/
