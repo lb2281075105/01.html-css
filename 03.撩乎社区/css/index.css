@@ -3,6 +3,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* 统一设置 */
@@ -39,6 +40,11 @@ ul{
 .hd-main-left .hd-main-nav a { /*background-color: skyblue;*/padding: 0 10px;color: #8590a6;}
 .hd-main-left .hd-main-nav a.current {color: #444;}
 .hd-main-left .hd-main-nav a:hover {color: #175199;}
+
+
+/* 右边 */
+.hd-main-right {display: flex;flex-direction: row;align-items: center;}
+
 
 /******************** 头部样式-end ************************/
 
