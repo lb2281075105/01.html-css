@@ -52,10 +52,42 @@
 /* 搜索 start*/
 #content{
 
-    height: 130px;
-    background-color: green;
+    /*height: 130px;*/
+    /*background-color: green;*/
+    width: 641px;
+    height:189px;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+#content .logo{
+    text-align: center;
 }
 
+#content .logo img{
+    height: 112px;
+}
+#content .search{
+    text-align: center;
+}
+
+#content .search .search-input{
+    width: 536px;
+    height: 44px;
+    border: none;
+    float: left;
+    outline: none;
+    border: 1px solid #e0e0e0;
+}
+#content .search .search-submit{
+    width:105px;
+    height: 44px;
+    border: none;
+    background-color: #398bfb;
+    color: #FFF;
+    font-size: 16px;
+    float: left;
+    outline: none;
+}
 
 /* 搜索 end */
 
