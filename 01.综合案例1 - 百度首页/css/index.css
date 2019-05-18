@@ -184,5 +184,46 @@
     margin-top: 10px;
 }
 
+
+/* 右边 */
+.list-content-right{
+    float: left;
+    width: 316px;
+}
+.list-content-right .list-content-right-head{
+    height: 40px;
+    line-height: 40px;
+    margin-top: 20px;
+    padding: 0px 10px;
+    width: 100%;
+}
+
+.list-content-right .list-content-right-head .list-right-head-left{
+    float: left;
+    font-weight: bolder;
+}
+
+.list-content-right .list-content-right-head .list-right-head-right{
+    float: right;
+}
+.list-content-right .list-content-right-head .list-right-head-right img,
+.list-content-right .list-content-right-head .list-right-head-right span{
+    vertical-align: middle;
+}
+.list-right-head-down ul{
+    margin-top: 10px;
+}
+.list-right-head-down ul li{
+    float: left;
+    list-style: none;
+    margin-left: 10px;
+    height: 40px;
+    line-height: 40px;
+}
+.list-right-head-down ul li a{
+    text-decoration: none;
+    color: #666666;
+    font-size: 14px;
+}
 /* 列表 end */
 
