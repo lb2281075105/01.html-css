@@ -73,10 +73,13 @@
 #content .search .search-input{
     width: 536px;
     height: 44px;
-    border: none;
     float: left;
+    /* 去除外边框 */
     outline: none;
     border: 1px solid #e0e0e0;
+}
+#content .search .search-input:focus {
+    border: 1px solid #398bfb;
 }
 #content .search .search-submit{
     width:105px;
@@ -94,11 +97,92 @@
 
 /* 列表 start*/
 #list{
-    height: 230px;
-    background-color: red;
-
+    width: 893px;
+    height:600px;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+}
+#list .list-head-left{
+    float: left;
+    font-size: 0px;
+}
+#list .list-head-right{
+    float: right;
+    line-height: 40px;
 }
 
+#list .list-head .list-head-left a{
+    display: inline-block;
+    color: #555555;
+    font-size: 14px;
+    text-decoration: none;
+    padding: 0 6px;
+    height: 40px;
+    vertical-align: top;
+    line-height: 40px;
+
+}
+#list .list-head a:hover{
+    background-color: #e0e0e0;
+}
+#list .list-head .list-head-left a img,
+#list .list-head .list-head-left a span{
+    vertical-align: middle;
+}
+#list .list-head{
+    border-bottom: 1px solid #ebebeb;
+    height: 40px;
+}
+
+#list .list-head .list-head-right img{
+    vertical-align: middle;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+/* 下面列表 */
+
+.list-content .list-content-left{
+    width: 575px;
+    height: 600px;
+    float: left;
+    padding:  10px 5px 5px 10px;
+}
+
+.list-content .list-content-left .cell1{
+    border-bottom: 1px solid #e0e0e0;
+    padding-bottom: 3px;
+}
+.list-content .list-content-left .cell1 p{
+    color: #0c80dc;
+    font-size: 12px;
+    margin: 3px 0px;
+}
+.list-content .list-content-left .cell1 h3{
+    margin-bottom: 10px;
+}
+
+
+.list-content .list-content-left .cell2{
+    padding: 20px 0px;
+    height: 160px;
+    border-bottom: 1px solid #e0e0e0;
+}
+.list-content .list-content-left .cell2 .cell2-left{
+    float: left;
+}
+
+
+.list-content .list-content-left .cell2 .cell2-right{
+    float: left;
+    width: 360px;
+    padding: 20px 20px;
+}
+.list-content .list-content-left .cell2 .cell2-right p{
+    color: #555555;
+    font-size: 12px;
+    margin-top: 10px;
+}
 
 /* 列表 end */
 
