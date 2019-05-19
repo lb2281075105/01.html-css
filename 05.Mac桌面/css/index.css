@@ -1,0 +1,61 @@
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+    list-style: none;
+}
+
+body{
+    background: url("../images/desktop.png") no-repeat fixed;
+    background-size: cover;
+}
+
+a{
+    text-decoration: none !important;
+    color: #000;
+
+}
+/* 头部 */
+
+
+#header{
+    background-color: rgba(255, 255, 255, .6);
+    width: 100%;
+    height: 36px;
+    line-height: 36px;
+    /* box-shadow: 5px 5px 10px red; */
+    position: fixed;
+    left: 0;
+    top: 0;
+    cursor: pointer;
+    z-index: 999;
+    font-size: 18px;
+}
+#header .ul-left li{
+    float: left;
+    margin-left: 10px;
+}
+#header .ul-right li{
+    float: right;
+    margin-right: 15px;
+}
+
+
+/* 尾部 */
+
+
+#footer{
+    height: 60px;
+    width: 100%;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+}
+#footer .dock{
+    background: url(../images/dock_bg.png);
+    width: 60%;
+    height: 100%;
+    margin: 0 auto;
+    border-top-right-radius: 5px;
+    border-top-left-radius: 5px;
+}
