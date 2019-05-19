@@ -39,8 +39,37 @@ a{
     float: right;
     margin-right: 15px;
 }
+/* 中间 */
 
+#content{
+    position: relative;
+}
+#content .file {
+    width: 100px;
+    text-align: center;
+    color: #ffffff;
+}
 
+#content .file img{
+    width: 100%;
+}
+
+#content .file:nth-child(1){
+    position: absolute;
+    left: 50px;
+    top: 100px;
+}
+
+#content .file:nth-child(2){
+    position: absolute;
+    left: 50px;
+    top: 220px;
+}
+#content .file:nth-child(3){
+    position: absolute;
+    left: 50px;
+    top: 340px;
+}
 /* 尾部 */
 
 
@@ -50,7 +79,6 @@ a{
     position: fixed;
     left: 0;
     bottom: 0;
-    background-color: red;
 }
 #footer .dock{
     background: url(../images/dock_bg.png);
