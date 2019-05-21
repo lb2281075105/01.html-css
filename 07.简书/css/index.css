@@ -1,0 +1,141 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    border: none;
+    box-sizing: border-box;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+/* 头部导航 */
+
+#nav{
+    height: 70px;
+    width: 100%;
+    background-color: lightblue;
+}
+#nav .header .header-left{
+    height: 70px;
+    float: left;
+    margin-left: 30px;
+    line-height: 70px;
+}
+#nav .header .header-left a{
+    display: inline-block;
+    height: 100%;
+}
+#nav .header .header-left a img{
+    height: 56px;
+    vertical-align: middle;
+}
+
+#nav .header .header-right{
+    float: right;
+    height: 70px;
+    line-height: 70px;
+}
+#nav .header .header-center .header-center-left{
+    float: left;
+}
+#nav .header .header-center .header-center-right{
+    float: left;
+}
+#nav .header .header-center{
+    float: left;
+    color: #969696;
+    margin-left: 60px;
+    line-height: 70px;
+    height: 70px;
+    text-align: center;
+
+}
+#nav .header .header-center .header-center-left a{
+    margin-left: 20px;
+    color: #ea6f5a;
+}
+#nav .header .header-center .header-center-left a img{
+    vertical-align: middle;
+    width: 25px;
+}
+#nav .header .header-center{
+    width: 500px;
+}
+#nav .header .header-center .header-center-right{
+    position: relative;
+}
+
+#nav .header .header-center .header-center-right .header-center-right-content{
+    margin-left: 20px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: #e0e0e0;
+    width: 180px;
+    position: absolute;
+    top: 15px;
+}
+#nav .header .header-center .header-center-right input {
+    height: 40px;
+    width: 100%;
+    vertical-align: top;
+    background-color: #e0e0e0;
+    border-radius: 20px;
+    padding: 0px 15px;
+    outline-style: none;
+    border: none;
+}
+/* 头部右边的 */
+#nav .header .header-right{
+    width: 260px;
+    margin-right: 20px;
+    height: 70px;
+}
+#nav .header .header-right .header-right-1{
+    float: left;
+}
+
+#nav .header .header-right .header-right-2{
+    float: left;
+}
+#nav .header .header-right .header-right-3{
+    float: left;
+}
+#nav .header .header-right .header-right-2 a img{
+    width: 56px;
+    vertical-align: middle;
+    border-radius: 50%;
+}
+#nav .header .header-right .header-right-3{
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+}
+#nav .header .header-right .header-right-3 a{
+    width: 100px;
+    height: 50px;
+    display: inline-block;
+    border-radius: 25px;
+    background-color: #ea6f5a;
+    margin-left: 15px;
+    position: absolute;
+    top: 10px;
+    color: #ffffff;
+    font-weight: bolder;
+    font-size: 13.8px;
+    line-height: 50px;
+}
+#nav .header .header-right .header-right-3 a img{
+    vertical-align: middle;
+}
+.iconfont {
+    font-family: iconfont!important;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
