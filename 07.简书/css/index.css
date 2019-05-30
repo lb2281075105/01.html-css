@@ -18,6 +18,11 @@ a{
     height: 70px;
     width: 100%;
     background-color: lightblue;
+    border-bottom: 1px solid #e7e7e7;
+    z-index: 999;
+    position: fixed;
+    left: 0;
+    top:0;
 }
 #nav .header .header-left{
     height: 70px;
@@ -74,19 +79,25 @@ a{
     height: 40px;
     border-radius: 20px;
     background-color: #e0e0e0;
-    width: 180px;
+    width: 200px;
     position: absolute;
     top: 15px;
+    line-height: 40px;
 }
+
 #nav .header .header-center .header-center-right input {
     height: 40px;
-    width: 100%;
     vertical-align: top;
-    background-color: #e0e0e0;
+    background-color: red;
     border-radius: 20px;
-    padding: 0px 15px;
+    margin-left: 10px;
+    margin-right: 40px;
     outline-style: none;
     border: none;
+}
+#nav .header .header-center .header-center-right .header-center-right-content img{
+    width: 20px;
+    background-color: red;
 }
 /* 头部右边的 */
 #nav .header .header-right{
@@ -113,6 +124,17 @@ a{
     text-align: center;
     vertical-align: middle;
     position: relative;
+}
+.header-right-1{
+    margin-right: 20px;
+}
+.header-right-1 a{
+    display: inline-block;
+    height:100%;
+    line-height: 70px;
+}
+.header-right-1 a img{
+    vertical-align: middle;
 }
 #nav .header .header-right .header-right-3 a{
     width: 100px;
