@@ -1,4 +1,6 @@
 // pages/home/home.js
+import request from '../../service/network.js'
+
 Page({
 
   /**
@@ -11,23 +13,18 @@ Page({
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad: function (options) {
-    wx.request({
-      url: 'http://123.207.32.32:8000/recommend',
-      success:function(res){
-        console.log(res);
-      }
-    })
-    wx.request({
-      url: 'http://123.207.32.32:8000/home/data',
-      data:{
-          page:1,
-          type:"sell"
-      },
-      success: function (res) {
-        console.log(res);
-      }
-    })
+  onLoad: function () {
+      request({
+        url:'http://123.207.32.32:8000/recommend',
+        success:function(res){
+          console.log(res);
+        },
+        fail:function(error){
+
+        }       
+        
+        
+      })
   },
 
   /**
