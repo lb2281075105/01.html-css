@@ -14,17 +14,32 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function () {
-      request({
-        url:'http://123.207.32.32:8000/recommend',
-        success:function(res){
-          console.log(res);
-        },
-        fail:function(error){
+      // request({
+      //   url:'http://123.207.32.32:8000/recommend',
+      //   success:function(res){
+      //     console.log(res);
+      //   },
+      //   fail:function(error){
 
-        }       
-        
-        
-      })
+      //   }       
+      // })
+      // 2.封装网络
+    // request({
+    //     url:'http://123.207.32.32:8000/recommend'      
+    //   }).then(res=>{
+    //     console.log(res);
+    //   }).catch(error=>{
+    //     console.log(error);
+    //   })
+
+    // 3.网络封装
+    request({
+      url: 'http://123.207.32.32:8000/recommend'
+    }).then(res => {
+      console.log(res);
+    }).catch(error => {
+      console.log(error);
+    })
   },
 
   /**
