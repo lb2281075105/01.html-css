@@ -31,3 +31,9 @@
 
 <w-tab-control titles="{{['流行','新款','精选']}}" 
                bind:titleclick="titleClick"/>
+
+<view class='goods'>
+  <block wx:for="{{goods[currentType].list}}" wx:key="index">
+    <w-goods-item goodsitem="{{item}}" class="item"/>
+  </block>
+</view>

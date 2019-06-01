@@ -19,3 +19,15 @@
 .recommend-item text{
   font-size: 28rpx;
 }
+
+.goods{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 20rpx 8rpx;
+
+}
+.goods .item{
+  width: 48%;
+  position: relative;
+}

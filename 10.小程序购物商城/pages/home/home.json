@@ -1,5 +1,6 @@
 {
   "usingComponents": {
-    "w-tab-control":"/components/w-tab-control/w-tab-control"
+    "w-tab-control":"/components/w-tab-control/w-tab-control",
+    "w-goods-item":"/components/w-goods-item/w-goods-item"
   }
 }
