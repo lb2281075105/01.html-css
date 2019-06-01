@@ -1,2 +1,33 @@
 <!--pages/home/home.wxml-->
-<text>pages/home/home.wxml</text>
+<!-- 轮播图 -->
+
+<swiper indicator-dots='{{true}}' 
+        indicator-active-color='#ff5777' 
+        circular='{{true}}' 
+        autoplay='{{true}}'
+        interval='3000'>
+
+  <block wx:for="{{banner}}" wx:key="{{index}}">
+    <swiper-item>
+      <image src='{{item.image}}' mode='widthFix' class='item-image'/>
+    </swiper-item>
+  </block>
+</swiper>
+
+<!-- 推荐 -->
+
+<view class='recommend'>
+  <block wx:for="{{recommend}}" wx:key="{{index}}">
+    <view class='recommend-item'>
+      <image src='{{item.image}}' class='recommend-image'/>
+      <view><text>{{item.title}}</text></view>
+    </view>
+  </block>
+</view>
+
+<view class='popular'>
+  <image src='../../assets/images/home/recommend_bg.jpg' />
+</view>
+
+<w-tab-control titles="{{['流行','新款','精选']}}" 
+               bind:titleclick="titleClick"/>
