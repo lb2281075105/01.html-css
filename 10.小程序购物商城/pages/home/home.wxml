@@ -37,3 +37,9 @@
     <w-goods-item goodsitem="{{item}}" class="item"/>
   </block>
 </view>
+
+<!-- 回到顶部按钮 -->
+
+<view class='back-top' hidden='{{isHidden}}' bindtap='backtopclick'>
+  <image src='/assets/images/common/top.png'/>
+</view>

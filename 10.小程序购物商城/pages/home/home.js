@@ -1,5 +1,6 @@
 // pages/home/home.js
 import request from '../../service/network.js'
+import {SCORE_TOP} from '../../common/const.js'
 
 Page({
 
@@ -14,7 +15,8 @@ Page({
       pop: { page: 1, list: [] },
       new: { page: 1, list: [] },
       sell: { page: 1, list: [] }
-    }
+    },
+    isHidden:true
   },
   titleClick(event){
     console.log(event);
@@ -50,6 +52,25 @@ Page({
   onReachBottom(){
     // 上拉刷新
     this._getGoodsWithType(this.data.currentType)
+  },
+  // 也可以这么声明函数
+  backtopclick:function(){
+    wx.pageScrollTo({
+      scrollTop: 0,
+      // duration:3000
+    })
+  },
+  onPageScroll(scrollTop){
+    console.log(scrollTop);
+    if (scrollTop.scrollTop > 1000){
+      this.setData({
+        isHidden:false
+      })
+    }else{
+      this.setData({
+        isHidden: true
+      })
+    }
   },
   _getBannerAndRecommend(){
     // 1.轮播图
