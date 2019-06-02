@@ -19,7 +19,7 @@
 <view class='recommend'>
   <block wx:for="{{recommend}}" wx:key="{{index}}">
     <view class='recommend-item'>
-      <image src='{{item.image}}' class='recommend-image'/>
+      <image src='{{item.image}}' class='recommend-image' bindload='onimageload'/>
       <view><text>{{item.title}}</text></view>
     </view>
   </block>
@@ -30,8 +30,10 @@
 </view>
 
 <w-tab-control titles="{{['流行','新款','精选']}}" 
-               bind:titleclick="titleClick"/>
-
+               bind:titleclick="titleClick" 
+               class="tab-control  {{isTabTop ? 'fixed' :''}}"/>
+<w-tab-control titles="{{['流行','新款','精选']}}" 
+               wx:if="{{isTabTop}}"/>
 <view class='goods'>
   <block wx:for="{{goods[currentType].list}}" wx:key="index">
     <w-goods-item goodsitem="{{item}}" class="item"/>

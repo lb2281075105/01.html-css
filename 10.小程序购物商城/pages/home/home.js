@@ -16,7 +16,9 @@ Page({
       new: { page: 1, list: [] },
       sell: { page: 1, list: [] }
     },
-    isHidden:true
+    isHidden:true,
+    isTabTop:false,
+    isTop:0
   },
   titleClick(event){
     console.log(event);
@@ -61,17 +63,27 @@ Page({
     })
   },
   onPageScroll(scrollTop){
-    console.log(scrollTop);
-    if (scrollTop.scrollTop > 1000){
-      this.setData({
-        isHidden:false
-      })
-    }else{
-      this.setData({
-        isHidden: true
-      })
-    }
+    this.setData({
+      isHidden: scrollTop.scrollTop < SCORE_TOP,
+      isTabTop: scrollTop.scrollTop >= this.data.isTop
+    })
   },
+  onimageload(){
+    wx.createSelectorQuery().select('.tab-control').boundingClientRect(rect => {
+      console.log(rect)
+      this.setData({
+        isTop: rect.top
+      })
+    }).exec()
+  },
+  // onShow(){
+  //   wx.createSelectorQuery().select('.tab-control').boundingClientRect(rect=>{
+  //     console.log(rect)
+  //     this.setData({
+  //       isTop: rect.top + 68
+  //     })
+  //   }).exec()
+  // },
   _getBannerAndRecommend(){
     // 1.轮播图
     request({

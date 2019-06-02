@@ -19,7 +19,7 @@
 .recommend-item text{
   font-size: 28rpx;
 }
-
+.popular image{width: 100%;}
 .goods{
   display: flex;
   flex-wrap: wrap;
@@ -40,4 +40,13 @@
 .back-top image{
   width: 90rpx;
   height: 90rpx;
+}
+.fixed{
+  position: fixed;
+  left:0;
+  right: 0;
+  top: 0;
+  background-color: #fff;
+  /* 设置index */
+  z-index: 9;
 }
