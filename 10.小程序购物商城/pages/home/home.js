@@ -44,6 +44,13 @@ Page({
     this._getBannerAndRecommend()
     this._getHomeGoods()
   },
+  // onLoad(options){
+
+  // }
+  onReachBottom(){
+    // 上拉刷新
+    this._getGoodsWithType(this.data.currentType)
+  },
   _getBannerAndRecommend(){
     // 1.轮播图
     request({
