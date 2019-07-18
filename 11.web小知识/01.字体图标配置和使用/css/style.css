@@ -1,0 +1,116 @@
+@font-face {
+  font-family: 'itlike';
+  src:  url('fonts/itlike.eot?ejhhkt');
+  src:  url('fonts/itlike.eot?ejhhkt#iefix') format('embedded-opentype'),
+    url('fonts/itlike.ttf?ejhhkt') format('truetype'),
+    url('fonts/itlike.woff?ejhhkt') format('woff'),
+    url('fonts/itlike.svg?ejhhkt#itlike') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'itlike' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-calendar1 .path1:before {
+  content: "\e900";
+  color: rgb(236, 236, 238);
+}
+.icon-calendar1 .path2:before {
+  content: "\e901";
+  margin-left: -1em;
+  color: rgb(218, 218, 220);
+}
+.icon-calendar1 .path3:before {
+  content: "\e902";
+  margin-left: -1em;
+  color: rgb(236, 236, 238);
+}
+.icon-calendar1 .path4:before {
+  content: "\e903";
+  margin-left: -1em;
+  color: rgb(255, 127, 90);
+}
+.icon-calendar1 .path5:before {
+  content: "\e904";
+  margin-left: -1em;
+  color: rgb(31, 215, 195);
+}
+.icon-calendar1 .path6:before {
+  content: "\e905";
+  margin-left: -1em;
+  color: rgb(0, 187, 201);
+}
+.icon-calendar1 .path7:before {
+  content: "\e906";
+  margin-left: -1em;
+  color: rgb(255, 231, 108);
+}
+.icon-calendar1 .path8:before {
+  content: "\e907";
+  margin-left: -1em;
+  color: rgb(0, 187, 201);
+}
+.icon-calendar1 .path9:before {
+  content: "\e908";
+  margin-left: -1em;
+  color: rgb(255, 231, 108);
+}
+.icon-calendar1 .path10:before {
+  content: "\e909";
+  margin-left: -1em;
+  color: rgb(68, 79, 92);
+}
+.icon-lock .path1:before {
+  content: "\1f331";
+  color: rgb(236, 196, 92);
+}
+.icon-lock .path2:before {
+  content: "\1f332";
+  margin-left: -1em;
+  color: rgb(248, 213, 120);
+}
+.icon-lock .path3:before {
+  content: "\1f333";
+  margin-left: -1em;
+  color: rgb(212, 176, 83);
+}
+.icon-lock .path4:before {
+  content: "\1f334";
+  margin-left: -1em;
+  color: rgb(228, 231, 231);
+}
+.icon-lock .path5:before {
+  content: "\1f335";
+  margin-left: -1em;
+  color: rgb(50, 77, 91);
+}
+.icon-lock .path6:before {
+  content: "\1f336";
+  margin-left: -1em;
+  color: rgb(228, 231, 231);
+}
+.icon-lock .path7:before {
+  content: "\1f337";
+  margin-left: -1em;
+  color: rgb(205, 207, 207);
+}
+
+.icon-home:before {
+  content: "\e90a";
+}
+.icon-home2:before {
+  content: "\e90b";
+}
