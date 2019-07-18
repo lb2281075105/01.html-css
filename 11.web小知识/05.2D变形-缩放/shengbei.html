@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-
+scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <style>
+        .container{
+            width: 100px;
+            height: 100px;
+            background-color: red;
+            /* 过度:你要对谁做过度就加在谁身上*/
+            transition: all 1s linear;
+        }
+        .container:active{
+            /*transform: translateX(100px);*/
+            transform: scale(0.1);
+
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        缩放
+    </div>
+
+</body>
+</html>
