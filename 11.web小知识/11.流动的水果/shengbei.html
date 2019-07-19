@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-
+scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>流动的水果</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+
+        nav {
+            margin: 100px auto;
+            width: 900px;
+            height: 100px;
+            background-color: red;
+            overflow: hidden;
+        }
+
+        ul {
+            width: 200%;
+            height: 100px;
+            list-style: none;
+            background-color: orange;
+        }
+
+        nav li {
+            width: 100px;
+            height: 100px;
+            float: left;
+            background-color: black;
+        }
+
+        nav li img {
+            width: 100%;
+            height: 100%;
+
+        }
+
+        nav ul{
+            animation: moving 5s linear infinite;
+        }
+
+        nav:hover ul{
+            animation-play-state: paused;
+        }
+        @keyframes moving {
+            from{ transform: translateX(0) }
+            to{transform: translateX(-900px)}
+        }
+
+    </style>
+</head>
+<body>
+
+<nav>
+    <ul>
+        <li><img src="f01.png" alt="" /></li>
+        <li><img src="f02.png" alt="" /></li>
+        <li><img src="f03.png" alt="" /></li>
+        <li><img src="f04.png" alt="" /></li>
+        <li><img src="f05.png" alt="" /></li>
+        <li><img src="f06.png" alt="" /></li>
+        <li><img src="f07.png" alt="" /></li>
+        <li><img src="f08.png" alt="" /></li>
+        <li><img src="f09.png" alt="" /></li>
+        <li><img src="f01.png" alt="" /></li>
+        <li><img src="f02.png" alt="" /></li>
+        <li><img src="f03.png" alt="" /></li>
+        <li><img src="f04.png" alt="" /></li>
+        <li><img src="f05.png" alt="" /></li>
+        <li><img src="f06.png" alt="" /></li>
+        <li><img src="f07.png" alt="" /></li>
+        <li><img src="f08.png" alt="" /></li>
+        <li><img src="f09.png" alt="" /></li>
+    </ul>
+</nav>
+
+</body>
+</html>
