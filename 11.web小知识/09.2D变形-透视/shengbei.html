@@ -8,13 +8,15 @@ scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
     <style>
-
+        <!-- 透视一般设置在顶部元素上 -->
+        body{
+            perspective: 100px;
+        }
         img{
             margin: 100px;
             border: 10px solid red;
             border-radius: 50%;
             transition: all 1s linear;
-            /* 变换中心点 */
             transform-origin: left top;
         }
 

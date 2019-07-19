@@ -6,29 +6,27 @@
           content="width=device-width, user-scalable=no, initial-
 scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>倾斜</title>
     <style>
 
+
+
         img{
-            margin: 100px;
-            border: 10px solid red;
-            border-radius: 50%;
-            transition: all 1s linear;
-            /* 变换中心点 */
-            transform-origin: left top;
+            width: 100px;
+            height: 163px;
+            margin: 200px auto;
         }
 
         img:hover{
-            transform: rotateX(-180deg);
+            transform: skewX(18deg);
         }
 
     </style>
 </head>
 <body>
 
-    <div class="container">
-        <img src="image.jpg" style="width: 60%"/>
-    </div>
+
+    <img src="image.jpg"/>
 
 </body>
 </html>
